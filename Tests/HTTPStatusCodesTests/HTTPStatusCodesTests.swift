@@ -77,7 +77,7 @@ class HTTPStatusCodesTests: XCTestCase {
         func ranges(rs: Range<Int>...) -> [Int] {
             var result = [Int]()
             for r in rs {
-                extend(&result, r)
+                result.appendContentsOf(r)
             }
             return result
         }
